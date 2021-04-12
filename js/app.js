@@ -1,46 +1,4 @@
 "use strict";
-/*
-let userName = prompt("what is your name ??");
-alert("welcome " + userName + ", it is a nice name ❤");
-console.log("welcome " + userName + ", it is a nice name ❤");
-let userAge = prompt("how old are you?");
-let myAge = 22;
-function calculateAge(age) {
-  if (age > myAge) {
-    let difference = age - myAge;
-    alert("You are " + difference + "years older than me !");
-    console.log("You are " + difference + "years older than me !");
-  } else if (age < myAge) {
-    let difference = myAge - age;
-    alert("You are " + difference + "years younger than me !");
-    console.log("You are " + difference + "years younger than me !");
-  } else {
-    alert("Nice we have same age ❤");
-    console.log("Nice we have same age ❤");
-  }
-}
-calculateAge(userAge);
-let userColor = prompt("what is your favorite color ?");
-alert(userColor + " is a Very beautiful color my favorite color is black");
-console.log(
-  userColor + " is a Very beautiful color, my favorite color is black"
-);
-let knowMe = prompt("Did you know me?");
-knowMe = knowMe.toLowerCase();
-function ifknow(knowMe) {
-  if (knowMe == "yes") {
-    alert("I'm glad you are here❤ ");
-    console.log("I'm glad you are here❤ ");
-  } else if (knowMe == "no") {
-    alert("I love getting to know new friends");
-    console("I love getting to know new friends");
-  } else {
-    alert("Have a good day");
-    console.log("Have a good day");
-  }
-}
-ifknow(knowMe);
-*/
 let userScore=0;
 let userName=prompt("what is your name?");
 let favoriteColor = prompt("is my favorite color is pink? \n (yes/no)").toLocaleLowerCase();
