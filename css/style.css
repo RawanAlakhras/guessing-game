@@ -51,9 +51,12 @@ main {
     color: #9dbeb9;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.text-color a{
+.prigh a{
     text-decoration: none;
     color: #ff8882;
+}
+.prigh ul{
+    margin: 0;
 }
 .about-me img{
     width:300px;
@@ -101,6 +104,26 @@ footer {
     padding: 8px 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
+}
+.section-3{
+    margin: auto;
+    background-color:#9dbeb9 ;
+    color: #FF8882;
+    border-radius: 2rem;
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px 0;
+    border: 5px solid #ff8882;
+    
+}
+.section-3 h1{
+    color: #194350;
+    text-align: center;
+    
+}
+.section-3 ol {
+  margin: auto;
+  width: 40%;
 }
 footer {
     background-color: #9dbeb9;

@@ -1,5 +1,6 @@
 "use strict";
-let userScore=0;
+
+let score=0;
 let userName=prompt("what is your name?");
 let favoriteColor = prompt("is my favorite color is pink? \n (yes/no)").toLocaleLowerCase();
 function myFavoriteColor(color){
@@ -7,7 +8,8 @@ function myFavoriteColor(color){
    {
        alert("That's right! I also like black");
        //console.log("That's right! I am also love black");
-       userScore++;
+       score++;
+      
    }
    else if(color=='no'){
     alert("Sorry ,I love pink it is a beautiful color ");
@@ -27,7 +29,7 @@ function mylocation(location){
     else if(location=='no'){
      alert("That's right! I live in  Ain Al-Basha");
      //console.log("That's right! I live in  Ain Al-Basha");
-     userScore++;
+      score++;
     }
  }
  mylocation(mycity);
@@ -37,7 +39,7 @@ function mylocation(location){
     {
         alert("That's right! and I finished the university with 3 and a half years.");
         //console.log("That's right! and I finished the university with 3 and a half years.");
-        userScore++;
+         score++;
     }
     else if(age=='no'){
      alert("Sorry ,I am 22 years old.");
@@ -52,7 +54,7 @@ function mylocation(location){
     {
         alert("That's right! I am frontend developer and i studied software engineering");
         //console.log("That's right! I am frontend developer and i studied software engineering");
-        userScore++;
+        score++;
     }
     else if(it =='no'){
      alert("Sorry ,I am frontend developer and i studied software engineering");
@@ -72,10 +74,51 @@ function mylocation(location){
     else if(dish =='no'){
      alert("That's right! I like rice .");
      //console.log("That's right! I like rice .");
-     userScore++;
+      score++;
     }
  }
  myDish(dish);
- alert("Welcome "+userName+" your score is "+userScore +" of 5" );
- //console.log("Welcome "+userName+" your score is "+userScore );
+ alert("Welcome "+userName +" we will play guessing game" );
+ //console.log("Welcome "+userName +" we will play guessing game" );
 
+
+
+let num = 9;
+let arr =[1,2,3,4,5,6,7,8,9,10];
+let userInput=prompt("plz enter guessing number to start game you have 4 chance");
+let opportunities =4;
+while(userInput != num && opportunities >0 ){
+    if(userInput > num){
+        alert("too high");
+    }
+    else{
+        alert("too low");
+    }
+    userInput = prompt("enter another number");
+    opportunities --;
+}
+if (userInput == num){
+    alert("it is correct! good job ");
+    score++;
+}else{
+    alert("sorry you lose the correct answere is "+num);
+}
+let opportunities2 =6;
+userInput = prompt("we will paly another guessing game with hint ,the number is in these list ["+arr+"]");
+while(userInput != num && opportunities2 >0){
+    if(userInput > 4){
+        alert("too high");
+    }
+    else{
+        alert("too low");
+    }
+    userInput = prompt("enter another number");
+    opportunities2--;
+}
+if (userInput == 4){
+    alert("it is correct! good job ");
+    score++;
+}else{
+    alert("sorry you lose the correct answere is "+4);
+}
+alert("welcome "+userName+" your final score is "+score +"of 7");
