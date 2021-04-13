@@ -73,7 +73,7 @@ let mycity = prompt("Do I live in Amman? \n (yes/no)").toLocaleLowerCase();
  alert("Welcome "+userName +" we will play guessing game" );
  //console.log("Welcome "+userName +" we will play guessing game" );
 let num = Math.floor(Math.random() * 10); 
-let arr =[1,2,3,4,5,6,7,8,9,10];
+let arr =[0,1,2,3,4,5,6,7,8,9];
 let userInput=prompt("plz enter guessing number to start game you have 4 chance");
 let opportunities =4;
 while(userInput != num && opportunities >0 ){
@@ -93,9 +93,10 @@ if (userInput == num){
     alert("sorry you lose the correct answere is "+num);
 }
 let opportunities2 =6;
+let num2 = Math.floor(Math.random() * 10); 
 userInput = prompt("we will paly another guessing game with hint ,the number is in these list ["+arr+"]");
-while(userInput != num && opportunities2 >0){
-    if(userInput > 4){
+while(userInput != num2 && opportunities2 >0){
+    if(userInput > num2){
         alert("too high");
     }
     else{
@@ -104,10 +105,10 @@ while(userInput != num && opportunities2 >0){
     userInput = prompt("enter another number");
     opportunities2--;
 }
-if (userInput == 4){
+if (userInput == num2){
     alert("it is correct! good job ");
     score++;
 }else{
-    alert("sorry you lose the correct answere is "+4);
+    alert("sorry you lose the correct answere is "+num2);
 }
 alert("welcome "+userName+" your final score is "+score +"of 7");
