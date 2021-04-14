@@ -12,4 +12,3 @@ first i will ask you 5 question about me <br>
 finaly i will give you a list of number and you should guess the correct number from the list and i will give you the final score.<br>
 
 
-My  Driver is :Nedal Alashqar
